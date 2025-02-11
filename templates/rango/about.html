@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+</head>
+<body>
+    <h1>Rango says...  <br />
+        here is the about page. </h1> <br />
+    <div>
+        <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat." />
+
+    </div>
+    <div>
+        <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />
+
+    </div>
+
+    <!-- Add a media image -->
+
+
+    <p>This tutorial has been put together by {{ Your_name }}.</p>
+    <a href="/rango/">Back to the homepage</a>
+
+</body>
+</html>
